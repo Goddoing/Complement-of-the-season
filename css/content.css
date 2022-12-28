@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+#formation {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#formation h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-bottom: 20px;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  background-color: #2c83e1;
+  width: 170px;
+  height: 3px;
+  margin: 2px auto;
+}
+
+#about {
+  padding-bottom: 50px;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial !important;
+}
+
+.carousel-caption h5 {
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.first-content {
+  padding: 0 10px;
+}
+
+.gtn {
+  display: inline-block;
+}
+
+.first-content h1 {
+  padding-bottom: 10px;
+}
+
+#formation .second-cta {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+
+.mid-content p {
+  padding-top: 10px;
+}
+
+
+
+.profile-pic img {
+  width: 100%;
+}
+
+.col-md-6 span {
+  color: #ff14bd;
+}
+
+.about-content h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.content .about-content {
+  padding-bottom: 20px;
+}
+
+.content div {
+  margin-bottom: 5px;
+}
+
+.content .btn {
+  margin-bottom: 10px;
+}
+
+
+#Animation {
+  padding: 30px 40px;
+  text-align: center;
+  background-color: #31202b;
+  color: #ff14bd;
+  height: 250px;
+}
+
+.neon-button {
+  color: var(--clr-neon);
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: currentColor 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.625rem;
+
+  text-shadow:
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+
+  box-shadow: 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+}
+
+.neon-button::before {
+  content: 'sunshine';
+  pointer-events: none;
+  color: #fff;
+  position: absolute;
+  background: #ff14bd;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(2em) rotateX(60deg);
+}
+
+
+@media (min-width: 765px) {
+  .neon-button {
+    font-size: 2rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 40px;
+  }
+}

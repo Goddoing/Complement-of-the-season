@@ -1,0 +1,87 @@
+body {
+  background: url('./asset/fortunate.jpeg') no-repeat top center / cover;
+  height: calc(100vh - 0.1px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 0.1px);
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.inner-box {
+  padding: 1.5rem;
+}
+
+.container .inner-box {
+  background: darkblue;
+  margin: 3rem;
+  color: #fff;
+  padding: 0.9rem;
+  border-radius: 0.625rem;
+  font-size: 0.7rem;
+}
+
+.btn {
+  background-color: #2ce706;
+  border: none;
+
+
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.5ms;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+@media (min-width: 1024px) {
+  /* body{
+      background: url('/asset/fortunate.jpeg') no-repeat top center / cover;
+      height: 100vh - 0.1px;
+      width: 100%;
+      overflow: hidden;
+   } */
+
+  .container .inner-box {
+    background: darkblue;
+    margin: 1.25rem;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 0.625rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 786px) {
+  .container .inner-box {
+    background: darkblue;
+    margin: 2rem;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 0.625rem;
+    font-size: 1.5rem;
+  }
+}
